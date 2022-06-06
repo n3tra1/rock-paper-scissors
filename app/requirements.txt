@@ -1,0 +1,14 @@
+aioredis==2.0.1
+attrs==21.4.0
+fastapi==0.78.0
+fastapi-camelcase==1.0.5
+FastAPI-SQLAlchemy==0.2.1
+pydantic==1.9.1
+pytest==7.1.2
+SQLAlchemy==1.4.37
+starlette==0.19.1
+uvicorn==0.17.6
+gunicorn==20.1.0
+requests==2.27.1
+pytest-env==0.6.2
+websockets==10.3

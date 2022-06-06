@@ -1,0 +1,6 @@
+venv
+.dockerignore
+Dockerfile
+__pycache__
+*.db
+log*.txt

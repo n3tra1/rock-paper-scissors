@@ -1,0 +1,24 @@
+services:
+
+  rock-paper-scissors:
+    build:
+      context: app/
+    ports:
+      - 8000:8000
+    networks: [ rps-net ]
+    environment:
+      - DB_URL=sqlite:///sqlite.db
+      - REDIS_URI=redis://redis:6379
+      - MIN_DAMAGE=10
+      - MAX_DAMAGE=20
+      - LIFE_POINTS=100
+    depends_on:
+      - redis
+
+  redis:
+    image: 'redis:6-alpine'
+    hostname: redis
+    networks: [ rps-net ]
+
+networks:
+  rps-net:
